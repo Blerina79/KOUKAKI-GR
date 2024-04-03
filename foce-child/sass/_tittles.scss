@@ -1,0 +1,89 @@
+.site-title {
+     text-align: center;
+     font-family: "quicksand";
+     font-size: 1.9 rem;
+     margin-top: none;
+     display:inline-block;
+}
+
+.main-navigation h1{
+margin-left: 155px;
+
+}
+
+
+h1 {
+     font-size: 2em;
+     margin: 0;
+     text-align: center;
+     top: 30px;
+    }
+
+ h1 span {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     top: 30px;
+     margin-bottom: 10px;
+     
+ }
+//--animation titres h2---//
+
+ .animTitle{
+   opacity: 0;
+   animation: animTitle 5s linear forwards;
+ }
+
+@keyframes animTitle {
+   from{
+      transform: translateY(90px);
+      opacity: 0;
+   }
+
+   to{
+      transform: translateY(0);
+      opacity: 1;
+   }
+}
+
+/*
+#studio h2 {
+   animation-timeline: view();
+   animation-range-start: cover 0%;
+   animation-range-end:contain 50%;
+}
+   
+*/
+
+
+
+
+ h3 {
+    transition: 10s ease-out;
+ }
+ 
+ 
+ .personnages {
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ 
+ .animTitle1 {
+   opacity: 0;
+   animation: animTitle 5s linear forwards;
+ }
+
+ @keyframes animTitle1 {
+   from{
+      transform: translateY(90px);
+      opacity: 0;
+   }
+
+   to{
+      transform: translateY(0);
+      opacity: 1;
+   }
+}
+
+ 

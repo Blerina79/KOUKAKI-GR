@@ -1,0 +1,74 @@
+.banner {
+    position: relative;
+    z-index: 1;
+    height: 800px;
+
+    //background-image: none !important;
+    //min-height: 600px;
+    //display:inline-table !important;
+    //justify-content: center;
+    //align-items: unset;
+    //object-fit: contain;
+}
+
+.banner,.banner_video {
+    align-items: center;
+}
+
+.banner, .banner_video {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+
+.banner_video {
+    z-index: 2;
+    opacity: 1;
+    margin-left:20%;
+
+    
+}
+
+
+.banner img {
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    margin-top: 3%;
+    animation:mooveDown 2s 300ms both, floatBanner 3s ease-in-out infinite alternate;
+    z-index: 7 !important;
+}  
+
+
+
+//effet de flottement du banner//
+
+@keyframes floatBanner {
+    
+        0%, 100% {
+          transform: translate3d(0, 0, 0);
+        }
+       
+        50% {
+          transform: translate3d(-12px, -13px, 0);
+        }
+
+        100%{
+            transform: translate3d(-15px, 10px, 0);
+        }
+       
+      }
+
+      @keyframes mooveDown {
+        0%{
+            transform: translateY(-500px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(700px);
+            visibility: visible;
+        }
+      }
+
+      

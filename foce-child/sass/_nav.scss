@@ -1,0 +1,262 @@
+.nav-toggle {
+    position:absolute;
+    z-index: 10;
+    top: 15px;
+    right: 5%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .main-navigation .line {
+    height: 3px;
+    background-color: #000;
+    display: block;
+    margin: auto;
+    margin-block: 2px;
+    width: 35px;
+}
+ .line {
+    position:absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: black;
+    transition: transform 0.3s ease-out;
+    opacity : 0.1s ease-out;
+}
+.l1 {
+    transform: translateY(-10px);
+}
+.l3 {
+    transform: translateY(10px);
+}
+.nav-toggle.active .l1 {
+    transform: translateY(0px) rotate(135deg);
+}
+.nav-toggle.active .l2 {
+    opacity: 0;
+}
+.nav-toggle.active .l3 {
+    transform: translateY(0px) rotate(-135deg);
+}
+
+    
+
+
+
+   
+      @media screen and (max-width: 700px) {
+          .main-navigation ul {
+              display: flex !important;
+              padding-left: 350px;
+          }
+      }
+      @media screen and (max-width: 600px) {
+          .main-navigation ul .site-title {
+              font-size: 16px;
+          }
+      }
+          .main-navigation.menu-burger {
+              height: 80px ;
+          }
+          .main-navigation.menu-burger ul {
+              display: flex;
+          }
+          body.burger {
+              max-width: 1440px;
+              width: 100%;
+              margin: 0 auto;
+              overflow-x: hidden;
+          }
+      // ******************************Styles par défaut lorsque le menu est ouvert******************************
+          .burger.open {
+              max-width: 1440px;
+              width: 100%;
+              overflow-x: hidden;
+              overflow-y: hidden;
+              animation: fadeIn 1.4s ease-out 0.4s both;
+          }
+          .menu-on {
+              position: absolute;
+              width: 100%;
+              height: 100vh;
+              background-color: #FFF5E9;
+              color: black;
+              opacity: 0;
+              visibility: hidden;
+              transition: opacity 1s ease, visibility 0.5s ease;
+          }
+          .menu-on ul {
+              display: flex;
+              flex-direction: column;
+              padding: 2rem;
+          }
+          .menu-on li {
+              font-size: 65px;
+              line-height: 110px;
+          }
+          .menu-on ul li {
+              margin-bottom: 2rem;
+          }
+          .menu-on li a:hover {
+              color: black;
+              text-shadow: 0px 0px 14px #FF5C00;
+          }
+      // ******************************Gestion de l'ouverture et fermeture du menu******************************
+          .ouvrir {
+              display: block;
+          }
+          .fermer {
+              display: none;
+          }
+          .open .ouvrir {
+              display: none;
+          }
+          .open .fermer {
+              display: block;
+          }
+          .open .menu-on {
+              opacity: 1;
+              visibility: visible;
+              transition: opacity 1s ease, visibility 0.5s ease;
+          }
+    // ******************************GESTION DU STYLE ET ANIMATION IMAGES******************************
+      // ******************************Logo du menu burger******************************
+          .logo-menu {
+              text-align: center;
+              padding: 2rem;
+          }
+          .logo-menu img {
+              width: 180px;
+              height: auto;
+              filter: drop-shadow(0px 0px 26.0937px rgba(255, 92, 0, 0.6));
+          }
+          // **************Espacement entre le titre et les éléments de la liste-burger************
+          .liste-burger li {
+              margin-top: 8px;
+          }
+      // ******************************Taille du texte footer******************************
+      .burger-menu-footer-link a{
+        margin-top: 45px;
+        font-size: 14px;
+      }
+      // **************************Animations Images- menu -nav-**********************************
+          .images-menu img {
+              position: absolute;
+          }
+          .orchidee {
+              top: 5em;
+              left: 0;
+              animation: rotateFlower 10s linear infinite;
+          }
+
+
+          .images-menu img.orchidee {
+              width: 10%;
+              height: auto;
+          }
+          .flower {
+              top: 42em;
+              left: 19em;
+              animation: spin 2s linear infinite;
+          }
+          .images-menu img.flower {
+              width: 5%;
+              height: auto;
+          }
+          .marguerite {
+              top: 13em;
+              right: 19em;
+              animation: spin 3s linear infinite;
+          }
+          .images-menu img.marguerite {
+              width: 13%;
+              height: auto;
+          }
+          .hibiscus {
+              right: 0;
+              animation: rotateFlower 10s linear infinite;
+              bottom: 100px;
+          }
+          .images-menu img.hibiscus {
+              width: 25%;
+              height: auto;
+              filter: blur(4px);
+          }
+          .flower-random {
+              right: 0;
+              animation: rotateFlower 4s linear infinite;
+              top: 30em ;
+          }
+          .images-menu img.flower-random {
+              width: 5%;
+              height: auto;
+          }
+          .catpurple {
+            top: 16em;
+            left: 21em;
+            animation: float 2s infinite ease-in-out;
+        }
+        .images-menu img.catpurple {
+            width: 10%;
+            height: auto;
+        }
+        .cat-orange {
+            top: 58em; 
+            left: 7em; 
+            animation: float 2.5s infinite ease-in-out;
+        }
+        .images-menu img.cat-orange {
+            width: 9%;
+            height: auto;
+        }
+        .cat-grey {
+            top: 43em;
+            right: 18em;
+            animation: float 1.8s infinite ease-in-out;
+        }
+        .images-menu img.cat-grey {
+            width: 9%;
+            height: auto;
+        }
+        @keyframes float {
+            0% {
+                transform: translate3d(0, 0, 0);
+            }
+            
+            75% {
+                transform: translate3d(-5px, -5px, 0);
+            }
+            100% {
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        .logo-menu {
+            text-align: center;
+            padding: 2rem;
+            animation: floatBanner 2s ease-in-out infinite alternate;
+    
+        }
+
+        @keyframes floatBanner {
+    
+            0%, 100% {
+              transform: translate3d(0, 0, 0);
+            }
+           
+            50% {
+              transform: translate3d(-12px, -13px, 0);
+            }
+    
+            100%{
+                transform: translate3d(-15px, 10px, 0);
+            }
+           
+          }

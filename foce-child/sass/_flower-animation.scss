@@ -1,0 +1,88 @@
+.story h2::after {
+    content: url(../assets/images/Sunflower.png);
+    position: absolute;
+    left: 0.7em;
+    top: 6em;
+    animation: spinstatique 2s linear infinite;
+ }
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+  
+@keyframes spinstatique {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: 77px 77px;
+    }
+    100%{
+        transform: rotate(360deg);
+        transform-origin: 77px 77px;
+    }
+}
+ .story__article::after {
+    content: url(../assets/images/Hibiscus.png);
+    position: absolute;
+    left: calc(50% + 414px);
+    top: 2em;
+    animation: spin 4s linear infinite;
+}
+
+
+
+ #studio h2::before {
+    content: url(../assets/images/random_flower.png);
+    position: absolute;
+    left: -1em;
+    top: 0;
+    animation: spin 3s linear infinite;
+}
+
+
+ #studio h2::after {
+    content: url(../assets/images/flower.png);
+    position: absolute;
+    right: 1em;
+    top: 1.2em;
+    animation: spin 3s linear infinite;
+}
+
+
+
+.site-footer::before {
+    position: absolute;
+    left: 4em;
+    top: 0em;
+    animation: spin 5s linear infinite;
+}
+
+
+ .site-footer::after {
+    position: absolute;
+    right: -4em;
+    bottom: 7.8em;
+    animation: spin 2.5s linear infinite;
+}
+
+
+
+ .site-footer ul::after {
+    position: absolute;
+    left: calc(50% - 323px);
+    bottom: -28.5em;
+    z-index: -1;
+    animation: spin 3.5s linear infinite;
+}
+
+
+#studio > div::before {
+    position: absolute;
+    left: calc(50% - 17.225px);
+    top: 40%;
+    
+}

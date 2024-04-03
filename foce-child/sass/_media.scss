@@ -1,0 +1,187 @@
+@media (max-width:1024px) {
+
+    .main-navigation h1 {
+       text-align: center;
+       margin-left: 0;
+       margin-right: 250px;
+    }
+
+    h2 {
+        margin-right: 350px;
+    }
+
+    #studio > div p {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-right: 5px;
+        margin-left: 20px;
+        margin-right:5px ;
+       
+    }
+
+    #studio > div {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+    }
+
+    #studio > div::before {
+        content: url(../assets/images/trple-leaf.png);
+        position: absolute;
+        left: calc(35% - 17.225px);
+        top: 49%;
+    }
+
+    .personnages {
+        align-items: center;
+        margin-right: 450px;
+    }
+
+    .nav-toggle{
+        right:500px;
+    }
+
+    .menu-on ul {
+    
+        margin-right: 450px;
+    }
+
+    
+}
+
+
+
+
+@media (max-width:768px) {
+    .banner__video {
+        display: none;
+    }  
+
+    .banner img{
+        display: none;
+    }
+
+    .main-navigation h1 {
+        margin-right: 480px;
+        font-size: 28px;
+        margin-left: 0;
+    }
+
+    .main-navigation button {
+        right: 755px;
+    }
+
+    .menu-on li {
+
+        margin-right: 200px;
+    }
+
+    
+    h2{
+        margin-right: 700px;
+    }
+
+    .personnages {
+      margin-right: 430px;
+    }
+
+    .story__article {
+      display: flex;  
+      justify-content: center;
+      margin-right: 680px;
+      width: 45%;
+        
+    }
+
+    .story #place > div p {
+        padding-left: 0;
+        margin-right: 300px;
+        font-size: 18px;
+    }
+
+    #place .little-cloud  #place .big-cloud {
+        
+        display: none;
+        visibility: hidden;
+    } 
+
+    #studio > div p {
+        width: 45% !important;
+        margin-right: 650px; 
+        margin-left: -105px;
+    }
+       
+    .story h2::after {
+        display: none;
+        visibility: hidden;
+     }
+    
+     .story__article::after {
+        display: none;
+        visibility: hidden;
+    }
+
+    #studio h2::before {
+        display: none;
+        visibility: hidden;
+    }
+
+    #studio > div::before {
+        content: url(./assets/images/trple-leaf.png);
+        visibility: hidden;
+    }
+    
+    }
+
+
+ 
+
+    @media (max-width:425px) {
+
+        .main-navigation button {
+    
+            margin-right:350px; 
+        }
+
+        .menu-on li {
+            font-size: 40px;
+            line-height: 110px;
+        }
+
+        .menu-on ul {
+
+            padding: 2rem;
+            margin-left: -350px;
+        }
+
+        h2{
+           margin-left: -300px; 
+        }
+
+        p {
+          width: 50%;
+          margin-right: 350px;
+        }
+
+        .story #characters h3 {
+        
+            margin-left: -370px;
+        }
+
+        #studio > div  {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column !important;
+            align-items: center;
+            width: 30%;
+            
+        }
+
+        #studio > div p {
+            width: 30%; 
+           
+        }
+        
+
+    }
